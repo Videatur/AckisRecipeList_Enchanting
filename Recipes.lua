@@ -298,7 +298,6 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11150, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_GLOVES")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:Retire()
 
     -- Enchant Gloves - Herbalism -- 13617
     recipe = AddRecipe(13617, V.ORIG, Q.UNCOMMON)
@@ -511,7 +510,6 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11203, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_GLOVES")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:Retire()
 
     -- Enchant Bracer - Greater Spirit -- 13846
     recipe = AddRecipe(13846, V.ORIG, Q.UNCOMMON)
@@ -534,7 +532,6 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11205, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_GLOVES")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:Retire()
 
     -- Enchant Cloak - Lesser Agility -- 13882
     recipe = AddRecipe(13882, V.ORIG, Q.UNCOMMON)
@@ -1022,6 +1019,16 @@ function module:InitializeRecipes()
     recipe:AddRepVendor(FAC.CENARION_EXPEDITION, REP.EXALTED, 17904)
     recipe:AddWorldDrop(Z.AHNQIRAJ)
 
+    -- Enchant Cloak - Greater Fire Resistance -- 25081
+    recipe = AddRecipe(25081, V.ORIG, Q.RARE)
+    recipe:SetSkillLevels(300, 300, 310, 325, 340)
+    recipe:SetRecipeItem(229008, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_CLOAK")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE, F.RAID, F.TANK, F.CENARION_EXPEDITION)
+    recipe:AddRepVendor(FAC.CENARION_EXPEDITION, REP.FRIENDLY, 17904)
+    recipe:AddWorldDrop(Z.AHNQIRAJ)
+
+
     -- Enchant Cloak - Dodge -- 25086
     recipe = AddRecipe(25086, V.ORIG, Q.RARE)
     recipe:SetSkillLevels(300, 300, 310, 325, 340)
@@ -1086,7 +1093,6 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(20749, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_OIL")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER)
-    recipe:Retire()
 
     -- Brilliant Mana Oil -- 25130
     recipe = AddRecipe(25130, V.ORIG, Q.COMMON)
@@ -1095,7 +1101,6 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(20748, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_OIL")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-    recipe:Retire()
 
     -- Enchant 2H Weapon - Agility -- 27837
     recipe = AddRecipe(27837, V.ORIG, Q.COMMON)
