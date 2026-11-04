@@ -2,7 +2,7 @@
 -- Constants
 -------------------------------------------------------------------------------
 local MODULE_NAME = "Enchanting"
-local MODULE_VERSION = 4
+local MODULE_VERSION = 5
 
 -------------------------------------------------------------------------------
 -- AddOn namespace.
@@ -40,15 +40,10 @@ end
 
 function module:OnEnable()
 	addon.CreateProfessionFromModule(self)
-
-	-- Some professions implement Discoveries; call it only if present to stay safe on MoP
-	if self.InitializeDiscoveries then
-		self:InitializeDiscoveries()
-	end
-
-	self:InitializeMobDrops()
-	self:InitializeTrainers()
-	self:InitializeVendors()
-	self:InitializeQuests()
-	self:InitializeRecipes()
+	if self.InitializeDiscoveries then self:InitializeDiscoveries() end
+	if self.InitializeMobDrops then self:InitializeMobDrops() end
+	if self.InitializeQuests then self:InitializeQuests() end
+	if self.InitializeTrainers then self:InitializeTrainers() end
+	if self.InitializeVendors then self:InitializeVendors() end
+	if self.InitializeRecipes then self:InitializeRecipes() end
 end
