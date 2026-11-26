@@ -1,3 +1,4 @@
+-- Generated candidate; review before replacing the installed module guide.
 local _, private = ...
 local addon = private.addon
 if not addon then return end
@@ -31,10 +32,7 @@ module.Guides = {
 ["outputCount"] = 1,
 ["outputItemID"] = 6218,
 ["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
+
 },
 ["spellID"] = 7421,
 ["title"] = "Runed Copper Rod"
@@ -134,17 +132,40 @@ module.Guides = {
 ["id"] = "journeyman",
 ["steps"] = {
 {
-["from"] = 70,
-["id"] = "70-100",
-["note"] = "Craft until skill 100.",
-["to"] = 100,
+["id"] = "70-85",
 ["variants"] = {
 {
-["count"] = 30,
+["requiredTools"] = {
+{
+["itemID"] = 6218,
+["quantity"] = 1
+}
+},
+["count"] = 21,
+["title"] = "Enchant Chest - Inferior Stamina",
 ["materials"] = {
 {
 10940,
-60
+21
+}
+},
+["spellID"] = 7420
+}
+},
+["to"] = 85,
+["from"] = 70
+},
+{
+["from"] = 85,
+["id"] = "85-100",
+["to"] = 100,
+["variants"] = {
+{
+["count"] = 15,
+["materials"] = {
+{
+10940,
+30
 }
 },
 ["requiredTools"] = {
@@ -209,50 +230,38 @@ module.Guides = {
 3
 }
 },
-["note"] = "This source recipe is absent from the Ackis recipe catalogue. Check your beta trainer before buying materials.",
 ["outputCount"] = 1,
 ["outputItemID"] = 6339,
 ["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
+
 },
 ["spellID"] = 7795,
-["title"] = "Runed Silver Rod",
-["trainers"] = {
-3345,
-4616,
-3011,
-1317,
-5157,
-4213
-}
+["title"] = "Runed Silver Rod"
 }
 }
 },
 {
-["from"] = 110,
-["id"] = "110-130",
 ["note"] = "Craft until skill 130.",
 ["to"] = 130,
+["from"] = 110,
+["id"] = "110-130",
 ["variants"] = {
 {
-["count"] = 32,
-["materials"] = {
-{
-10940,
-64
-}
-},
 ["requiredTools"] = {
 {
 ["itemID"] = 6218,
 ["quantity"] = 1
 }
 },
-["spellID"] = 7771,
-["title"] = "Enchant Cloak - Minor Protection"
+["count"] = 29,
+["title"] = "Enchant Cloak - Minor Protection",
+["materials"] = {
+{
+10940,
+58
+}
+},
+["spellID"] = 7771
 }
 }
 },
@@ -272,7 +281,7 @@ module.Guides = {
 },
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 6339,
 ["quantity"] = 1
 }
 },
@@ -289,7 +298,7 @@ module.Guides = {
 },
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 6339,
 ["quantity"] = 1
 }
 },
@@ -344,21 +353,13 @@ module.Guides = {
 1
 }
 },
-["note"] = "This source recipe is absent from the Ackis recipe catalogue. Check your beta trainer before buying materials.",
 ["outputCount"] = 1,
 ["outputItemID"] = 11130,
 ["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
+
 },
 ["spellID"] = 13628,
-["title"] = "Runed Golden Rod",
-["trainers"] = {
-11074,
-11072
-}
+["title"] = "Runed Golden Rod"
 }
 }
 },
@@ -388,7 +389,7 @@ module.Guides = {
 ["recipeItemID"] = 20752,
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 6339,
 ["quantity"] = 1
 }
 },
@@ -419,7 +420,7 @@ module.Guides = {
 },
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 11130,
 ["quantity"] = 1
 }
 },
@@ -429,27 +430,44 @@ module.Guides = {
 }
 },
 {
+["note"] = "Continue with Lesser Agility or switch to Bracer - Strength. Compare the cost of about 22 Soul Dust and 15 Vision Dust.",
+["to"] = 200,
 ["from"] = 185,
 ["id"] = "185-200",
-["note"] = "Optional: continue Lesser Agility to 200 if its reagents are more accessible. Extra crafts for this manual alternative are not included in the shopping list.",
-["to"] = 200,
 ["variants"] = {
 {
+["requiredTools"] = {
+{
+["itemID"] = 11130,
+["quantity"] = 1
+}
+},
+["count"] = 22,
+["title"] = "Enchant Boots - Lesser Agility",
+["materials"] = {
+{
+11083,
+22
+}
+},
+["spellID"] = 13637
+},
+{
+["requiredTools"] = {
+{
+["itemID"] = 11130,
+["quantity"] = 1
+}
+},
 ["count"] = 15,
+["title"] = "Enchant Bracer - Strength",
 ["materials"] = {
 {
 11137,
 15
 }
 },
-["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
-},
-["spellID"] = 13661,
-["title"] = "Enchant Bracer - Strength"
+["spellID"] = 13661
 }
 }
 },
@@ -478,21 +496,13 @@ module.Guides = {
 1
 }
 },
-["note"] = "This source recipe is absent from the Ackis recipe catalogue. Check your beta trainer before buying materials.",
 ["outputCount"] = 1,
 ["outputItemID"] = 11145,
 ["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
+
 },
 ["spellID"] = 13702,
-["title"] = "Runed Truesilver Rod",
-["trainers"] = {
-11074,
-11072
-}
+["title"] = "Runed Truesilver Rod"
 }
 }
 },
@@ -522,7 +532,7 @@ module.Guides = {
 ["recipeItemID"] = 20753,
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 11130,
 ["quantity"] = 1
 }
 },
@@ -552,7 +562,7 @@ module.Guides = {
 },
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 11145,
 ["quantity"] = 1
 }
 },
@@ -580,107 +590,58 @@ module.Guides = {
 ["id"] = "artisan",
 ["steps"] = {
 {
-["from"] = 225,
-["id"] = "225-230",
-["note"] = "Learn Artisan Enchanting and the later trainer recipes from Annora before leaving Uldaman. Enchant a suitable pair of gloves until 230.",
-["to"] = 230,
-["variants"] = {
-{
-["count"] = 5,
-["materials"] = {
-{
-11137,
-5
-}
-},
-["requiredTools"] = {
-{
-["itemID"] = 11145,
-["quantity"] = 1
-}
-},
-["spellID"] = 13815,
-["title"] = "Enchant Gloves - Agility"
-}
-}
-},
-{
-["from"] = 230,
-["id"] = "230-235",
-["note"] = "Apply Stamina to suitable boots until 235. Re-enchanting the same item is sufficient.",
-["to"] = 235,
-["variants"] = {
-{
-["count"] = 5,
-["materials"] = {
-{
-11137,
-10
-}
-},
-["requiredTools"] = {
-{
-["itemID"] = 11145,
-["quantity"] = 1
-}
-},
-["spellID"] = 13836,
-["title"] = "Enchant Boots - Stamina"
-}
-}
-},
-{
-["from"] = 235,
-["id"] = "235-250",
-["note"] = "Apply Superior Stamina to a suitable chest item until 250. Stop at the target; gains may require extra materials.",
+["note"] = "Learn Artisan Enchanting and the later trainer recipes from Annora before leaving Uldaman. Re-enchant a suitable pair of gloves until 250.",
 ["to"] = 250,
+["from"] = 225,
+["id"] = "225-250",
 ["variants"] = {
 {
-["count"] = 20,
-["materials"] = {
-{
-11137,
-60
-}
-},
 ["requiredTools"] = {
 {
 ["itemID"] = 11145,
 ["quantity"] = 1
 }
 },
-["spellID"] = 13858,
-["title"] = "Enchant Chest - Superior Stamina"
-}
-}
-},
-{
-["from"] = 250,
-["id"] = "250-265",
-["note"] = "Buy and learn Lesser Mana Oil from Kania in the upper floor of the Silithus inn. Buy Crystal Vials from Mishta or an Alchemy Supplies vendor. Manual alternative: Annora teaches Enchant Bracer - Greater Strength; each use takes 1 Dream Dust and 2 Lesser Nether Essence. Its extra crafts and reagents are not included in the shopping list.",
-["to"] = 265,
-["variants"] = {
-{
-["count"] = 20,
+["count"] = 34,
+["title"] = "Enchant Gloves - Agility",
 ["materials"] = {
 {
-8831,
-20
-},
-{
-8925,
-20
-},
-{
-11176,
-20
+11137,
+34
 }
 },
+["spellID"] = 13815
+}
+}
+},
+{
+["note"] = "Buy the Lesser Mana Oil and Wizard Oil formulas from Kania in Silithus. Buy Crystal Vials from Mishta or an Alchemy Supplies vendor. If Purple Lotus is scarce, Annora teaches Greater Strength on bracers. Each enchant uses 1 Dream Dust and 2 Lesser Nether Essence, so budget its materials separately.",
+["to"] = 270,
+["from"] = 250,
+["id"] = "250-270",
+["variants"] = {
+{
 ["recipeItemID"] = 20754,
 ["requiredTools"] = {
 {
 ["itemID"] = 11145,
 ["quantity"] = 1
+}
+},
+["count"] = 26,
+["title"] = "Lesser Mana Oil",
+["materials"] = {
+{
+8831,
+26
+},
+{
+8925,
+26
+},
+{
+11176,
+26
 }
 },
 ["shoppingRequirements"] = {
@@ -689,30 +650,30 @@ module.Guides = {
 1
 }
 },
-["spellID"] = 25127,
-["title"] = "Lesser Mana Oil"
+["spellID"] = 25127
 }
 }
 },
 {
-["from"] = 265,
-["id"] = "265-294",
-["note"] = "Buy the formula from Daniel Bartlett in Undercity (Horde) or Mythrin'dir in Darnassus (Alliance). It binds on pickup: purchase it on this character. Enchant a suitable shield until 294.",
-["to"] = 294,
+["note"] = "Buy the shield formula on the enchanter who will learn it. It binds on pickup. Daniel Bartlett in Undercity and Mythrin'dir in Darnassus sell it.",
+["to"] = 275,
+["from"] = 270,
+["id"] = "270-275",
 ["variants"] = {
 {
-["count"] = 32,
-["materials"] = {
-{
-11176,
-192
-}
-},
 ["recipeItemID"] = 16217,
 ["requiredTools"] = {
 {
 ["itemID"] = 11145,
 ["quantity"] = 1
+}
+},
+["count"] = 5,
+["title"] = "Enchant Shield - Greater Stamina",
+["materials"] = {
+{
+11176,
+30
 }
 },
 ["shoppingRequirements"] = {
@@ -721,16 +682,111 @@ module.Guides = {
 1
 }
 },
-["spellID"] = 20017,
-["title"] = "Enchant Shield - Greater Stamina"
+["spellID"] = 20017
 }
 }
 },
 {
-["from"] = 294,
-["id"] = "294-295",
-["note"] = "Lorelae Wintersong in Nighthaven, Moonglade, sells the Runed Arcanite Rod formula. Buy the Superior Defense formula at the same time. Obtain the unenchanted Arcanite Rod from Blacksmithing or the Auction House.",
+["id"] = "275-295",
+["from"] = 275,
 ["to"] = 295,
+["note"] = "Make Wizard Oil with the formula from Kania, or use the shield enchant if Dream Dust is cheaper. Craft counts are estimates.",
+["variants"] = {
+{
+["spellID"] = 25128,
+["title"] = "Wizard Oil",
+["recipeItemID"] = 20755,
+["requiredTools"] = {
+{
+["itemID"] = 11145,
+["quantity"] = 1
+}
+},
+["shoppingRequirements"] = {
+{
+20755,
+1
+}
+},
+["count"] = 26,
+["materials"] = {
+{
+4625,
+52
+},
+{
+8925,
+26
+},
+{
+16204,
+78
+}
+}
+},
+{
+["recipeItemID"] = 16217,
+["requiredTools"] = {
+{
+["itemID"] = 11145,
+["quantity"] = 1
+}
+},
+["count"] = 23,
+["title"] = "Enchant Shield - Greater Stamina",
+["materials"] = {
+{
+11176,
+138
+}
+},
+["shoppingRequirements"] = {
+{
+16217,
+1
+}
+},
+["spellID"] = 20017
+}
+}
+},
+{
+["id"] = "295-299",
+["from"] = 295,
+["to"] = 299,
+["note"] = "Use the shield formula learned earlier. Allow extra dust if skill gains slow down.",
+["variants"] = {
+{
+["recipeItemID"] = 16217,
+["requiredTools"] = {
+{
+["itemID"] = 11145,
+["quantity"] = 1
+}
+},
+["count"] = 8,
+["title"] = "Enchant Shield - Greater Stamina",
+["materials"] = {
+{
+11176,
+48
+}
+},
+["shoppingRequirements"] = {
+{
+16217,
+1
+}
+},
+["spellID"] = 20017
+}
+}
+},
+{
+["from"] = 299,
+["id"] = "299-300",
+["note"] = "Buy the Runed Arcanite Rod formula from Lorelae Wintersong in Nighthaven, Moonglade. Obtain the Arcanite Rod from a Blacksmith or the Auction House. You can learn the recipe at 290; save this craft for the final skill point if following this route.",
+["to"] = 300,
 ["variants"] = {
 {
 ["count"] = 1,
@@ -777,45 +833,13 @@ module.Guides = {
 ["title"] = "Runed Arcanite Rod"
 }
 }
-},
-{
-["from"] = 295,
-["id"] = "295-300",
-["note"] = "Buy Superior Defense from Lorelae Wintersong and enchant a suitable cloak until 300. Manual alternative: continue Greater Stamina on a shield if Dream Dust is cheaper. Extra crafts for that alternative are not included in shopping.",
-["to"] = 300,
-["variants"] = {
-{
-["count"] = 5,
-["materials"] = {
-{
-16204,
-40
-}
-},
-["recipeItemID"] = 16224,
-["requiredTools"] = {
-{
-["itemID"] = 11145,
-["quantity"] = 1
-}
-},
-["shoppingRequirements"] = {
-{
-16224,
-1
-}
-},
-["spellID"] = 20015,
-["title"] = "Enchant Cloak - Superior Defense"
-}
-}
 }
 },
 ["title"] = "Artisan",
 ["to"] = 300,
 ["training"] = {
 ["level"] = 35,
-["note"] = "Visit Annora inside Uldaman before passing 225. Bring a party or a higher-level helper, enough gold, and roughly 100 Vision Dust. Clear all enemies in her room to make her appear. Learn the later recipes before leaving; the back entrance in Badlands is the shorter approach.",
+["note"] = "Visit Annora inside Uldaman before passing 225. Use the back entrance in Badlands and clear the scorpids in her room so she appears. Bring gold for training and around 50 Vision Dust, including spare dust for skill gains if you plan to level in the dungeon. Learn the later trainer recipes before leaving.",
 ["rank"] = "Artisan Enchanting",
 ["skill"] = 200,
 ["trainers"] = {
@@ -873,7 +897,7 @@ module.Guides = {
 ["mapID"] = 1456,
 ["name"] = "Mot Dawnstrider",
 ["x"] = 44.9,
-["y"] = 39.0,
+["y"] = 38.5,
 ["zone"] = Z["THUNDER_BLUFF"]
 },
 [11072] = {
@@ -982,6 +1006,8 @@ module.Guides = {
 }
 },
 ["materialNames"] = {
+[4625] = "Firebloom",
+[20755] = "Formula: Wizard Oil",
 [10938] = "Lesser Magic Essence",
 [10940] = "Strange Dust",
 [11082] = "Greater Astral Essence",
@@ -1002,7 +1028,6 @@ module.Guides = {
 [16206] = "Arcanite Rod",
 [16207] = "Runed Arcanite Rod",
 [16217] = "Formula: Enchant Shield - Greater Stamina",
-[16224] = "Formula: Enchant Cloak - Superior Defense",
 [16243] = "Formula: Runed Arcanite Rod",
 [17034] = "Maple Seed",
 [17035] = "Stranglethorn Seed",
@@ -1022,6 +1047,14 @@ module.Guides = {
 [8925] = "Crystal Vial"
 },
 ["materialSources"] = {
+[4625] = {
+["kind"] = "auction",
+["note"] = "Gather Firebloom with Herbalism or buy it from another player."
+},
+[20755] = {
+["kind"] = "supply",
+["note"] = "Buy the formula from Kania in Silithus."
+},
 [10938] = {
 ["kind"] = "disenchant",
 ["note"] = "Disenchant eligible equipment or buy this reagent at the Auction House. Outcomes depend on item level and quality; no single zone guarantees this material."
@@ -1112,9 +1145,6 @@ Z["HILLSBRAD_FOOTHILLS"]
 [16217] = {
 ["kind"] = "supply"
 },
-[16224] = {
-["kind"] = "supply"
-},
 [16243] = {
 ["kind"] = "supply"
 },
@@ -1196,8 +1226,19 @@ Z["STRANGLETHORN_VALE"]
 
 },
 ["source"] = "https://www.wow-professions.com/forever/enchanting-leveling-guide",
-["sourceDate"] = "2026-10-25",
-["sourceHash"] = "c237b8b3182875e3f238d298ac0061dfd11de3a6fb146beed23d2cc044430af6",
+["sourceDate"] = "2026-11-20",
+["sourceHash"] = "0d69a5b1a6f25364ffaf2bbca1a28d5e39816379ea353eee31b55cc1f3c4f5e3",
+["stepProgressMigrations"] = {
+["265-299"] = {
+"270-275",
+"275-295",
+"295-299"
+},
+["70-100"] = {
+"70-85",
+"85-100"
+}
+},
 ["supplies"] = {
 {
 ["faction"] = "Horde",
@@ -1210,7 +1251,7 @@ Z["STRANGLETHORN_VALE"]
 ["mapID"] = 1458,
 ["name"] = "Daniel Bartlett",
 ["x"] = 64.2,
-["y"] = 37.6,
+["y"] = 37.7,
 ["zone"] = Z["UNDERCITY"]
 },
 {
@@ -1239,7 +1280,7 @@ Z["STRANGLETHORN_VALE"]
 },
 ["mapID"] = 1453,
 ["name"] = "Jessara Cordell",
-["x"] = 53.0,
+["x"] = 52.9,
 ["y"] = 74.1,
 ["zone"] = Z["STORMWIND_CITY"]
 },
@@ -1247,6 +1288,7 @@ Z["STRANGLETHORN_VALE"]
 ["faction"] = "Neutral",
 ["id"] = "kania",
 ["items"] = {
+[20755] = true,
 [10938] = true,
 [10940] = true,
 [20752] = true,
@@ -1276,14 +1318,13 @@ Z["STRANGLETHORN_VALE"]
 ["mapID"] = 1454,
 ["name"] = "Kithas",
 ["x"] = 53.7,
-["y"] = 38.1,
+["y"] = 38.0,
 ["zone"] = Z["ORGRIMMAR"]
 },
 {
 ["faction"] = "Neutral",
 ["id"] = "lorelae-wintersong",
 ["items"] = {
-[16224] = true,
 [16243] = true,
 [3372] = true,
 [6217] = true
@@ -1291,7 +1332,7 @@ Z["STRANGLETHORN_VALE"]
 ["mapID"] = 1450,
 ["name"] = "Lorelae Wintersong",
 ["x"] = 48.3,
-["y"] = 40.1,
+["y"] = 40.2,
 ["zone"] = Z["MOONGLADE"]
 },
 {
@@ -1353,7 +1394,7 @@ Z["STRANGLETHORN_VALE"]
 },
 ["mapID"] = 1456,
 ["name"] = "Nata Dawnstrider",
-["x"] = 44.5,
+["x"] = 44.9,
 ["y"] = 39.0,
 ["zone"] = Z["THUNDER_BLUFF"]
 },
@@ -1458,10 +1499,7 @@ Z["STRANGLETHORN_VALE"]
 ["outputCount"] = 1,
 ["outputItemID"] = 6218,
 ["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
+
 },
 ["spellID"] = 7421,
 ["title"] = "Runed Copper Rod"
@@ -1562,41 +1600,15 @@ Z["STRANGLETHORN_VALE"]
 ["steps"] = {
 {
 ["from"] = 70,
-["id"] = "70-100",
-["note"] = "Craft until skill 100.",
-["to"] = 100,
-["variants"] = {
-{
-["count"] = 33,
-["materials"] = {
-{
-10938,
-33
-}
-},
-["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
-},
-["spellID"] = 7426,
-["title"] = "Enchant Chest - Minor Absorption"
-}
-}
-},
-{
-["from"] = 100,
-["id"] = "100-109",
-["note"] = "Craft until skill 109.",
+["id"] = "70-109",
 ["to"] = 109,
 ["variants"] = {
 {
-["count"] = 18,
+["count"] = 49,
 ["materials"] = {
 {
 10938,
-18
+49
 }
 },
 ["requiredTools"] = {
@@ -1636,65 +1648,32 @@ Z["STRANGLETHORN_VALE"]
 3
 }
 },
-["note"] = "This source recipe is absent from the Ackis recipe catalogue. Check your beta trainer before buying materials.",
 ["outputCount"] = 1,
 ["outputItemID"] = 6339,
 ["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
+
 },
 ["spellID"] = 7795,
-["title"] = "Runed Silver Rod",
-["trainers"] = {
-3345,
-4616,
-3011,
-1317,
-5157,
-4213
-}
+["title"] = "Runed Silver Rod"
 }
 }
 },
 {
 ["from"] = 110,
-["id"] = "110-130",
-["note"] = "Craft until skill 130.",
-["to"] = 130,
+["id"] = "110-125",
+["note"] = "Use Simple Wood from an Enchanting Supplies vendor. Make wands until skill 125.",
+["to"] = 125,
 ["variants"] = {
 {
-["count"] = 20,
+["count"] = 23,
 ["materials"] = {
+{
+4470,
+23
+},
 {
 10938,
-80
-}
-},
-["note"] = "Learn the vendor formula before starting. Kithas, Nata Dawnstrider and Leo Sarn serve Horde; Tilli Thistlefuzz serves Alliance. The alternate recipe avoids this formula.",
-["recipeItemID"] = 6349,
-["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
-},
-["shoppingRequirements"] = {
-{
-6349,
-1
-}
-},
-["spellID"] = 7793,
-["title"] = "Enchant 2H Weapon - Lesser Intellect"
-},
-{
-["count"] = 32,
-["materials"] = {
-{
-10940,
-64
+46
 }
 },
 ["requiredTools"] = {
@@ -1703,26 +1682,26 @@ Z["STRANGLETHORN_VALE"]
 ["quantity"] = 1
 }
 },
-["spellID"] = 7771,
-["title"] = "Enchant Cloak - Minor Protection"
+["spellID"] = 14807,
+["title"] = "Greater Magic Wand"
 }
 }
 },
 {
-["from"] = 130,
-["id"] = "130-150",
-["note"] = "Craft until skill 150.",
+["from"] = 125,
+["id"] = "125-150",
+["note"] = "If you prefer to skip the Lesser Intellect formula, use Enchant Boots - Minor Stamina and budget Strange Dust instead.",
 ["to"] = 150,
 ["variants"] = {
 {
-["count"] = 32,
+["count"] = 37,
 ["materials"] = {
 {
 10938,
-128
+148
 }
 },
-["note"] = "Learn the vendor formula before starting. Kithas, Nata Dawnstrider and Leo Sarn serve Horde; Tilli Thistlefuzz serves Alliance. The alternate recipe avoids this formula.",
+["note"] = "Learn the vendor formula before crafting. Kithas, Nata Dawnstrider and Leo Sarn serve Horde. Tilli Thistlefuzz serves Alliance.",
 ["recipeItemID"] = 6349,
 ["requiredTools"] = {
 {
@@ -1740,16 +1719,16 @@ Z["STRANGLETHORN_VALE"]
 ["title"] = "Enchant 2H Weapon - Lesser Intellect"
 },
 {
-["count"] = 20,
+["count"] = 25,
 ["materials"] = {
 {
 10940,
-80
+100
 }
 },
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 6339,
 ["quantity"] = 1
 }
 },
@@ -1804,21 +1783,13 @@ Z["STRANGLETHORN_VALE"]
 1
 }
 },
-["note"] = "This source recipe is absent from the Ackis recipe catalogue. Check your beta trainer before buying materials.",
 ["outputCount"] = 1,
 ["outputItemID"] = 11130,
 ["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
+
 },
 ["spellID"] = 13628,
-["title"] = "Runed Golden Rod",
-["trainers"] = {
-11074,
-11072
-}
+["title"] = "Runed Golden Rod"
 }
 }
 },
@@ -1848,7 +1819,7 @@ Z["STRANGLETHORN_VALE"]
 ["recipeItemID"] = 20752,
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 6339,
 ["quantity"] = 1
 }
 },
@@ -1879,7 +1850,7 @@ Z["STRANGLETHORN_VALE"]
 },
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 11130,
 ["quantity"] = 1
 }
 },
@@ -1889,27 +1860,44 @@ Z["STRANGLETHORN_VALE"]
 }
 },
 {
+["note"] = "Continue with Lesser Agility or switch to Bracer - Strength. Compare the cost of about 22 Soul Dust and 15 Vision Dust.",
+["to"] = 200,
 ["from"] = 185,
 ["id"] = "185-200",
-["note"] = "Optional: continue Lesser Agility to 200 if its reagents are more accessible. Extra crafts for this manual alternative are not included in the shopping list.",
-["to"] = 200,
 ["variants"] = {
 {
+["requiredTools"] = {
+{
+["itemID"] = 11130,
+["quantity"] = 1
+}
+},
+["count"] = 22,
+["title"] = "Enchant Boots - Lesser Agility",
+["materials"] = {
+{
+11083,
+22
+}
+},
+["spellID"] = 13637
+},
+{
+["requiredTools"] = {
+{
+["itemID"] = 11130,
+["quantity"] = 1
+}
+},
 ["count"] = 15,
+["title"] = "Enchant Bracer - Strength",
 ["materials"] = {
 {
 11137,
 15
 }
 },
-["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
-},
-["spellID"] = 13661,
-["title"] = "Enchant Bracer - Strength"
+["spellID"] = 13661
 }
 }
 },
@@ -1938,21 +1926,13 @@ Z["STRANGLETHORN_VALE"]
 1
 }
 },
-["note"] = "This source recipe is absent from the Ackis recipe catalogue. Check your beta trainer before buying materials.",
 ["outputCount"] = 1,
 ["outputItemID"] = 11145,
 ["requiredTools"] = {
-{
-["itemID"] = 6218,
-["quantity"] = 1
-}
+
 },
 ["spellID"] = 13702,
-["title"] = "Runed Truesilver Rod",
-["trainers"] = {
-11074,
-11072
-}
+["title"] = "Runed Truesilver Rod"
 }
 }
 },
@@ -1982,7 +1962,7 @@ Z["STRANGLETHORN_VALE"]
 ["recipeItemID"] = 20753,
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 11130,
 ["quantity"] = 1
 }
 },
@@ -2012,7 +1992,7 @@ Z["STRANGLETHORN_VALE"]
 },
 ["requiredTools"] = {
 {
-["itemID"] = 6218,
+["itemID"] = 11145,
 ["quantity"] = 1
 }
 },
@@ -2040,107 +2020,58 @@ Z["STRANGLETHORN_VALE"]
 ["id"] = "artisan",
 ["steps"] = {
 {
-["from"] = 225,
-["id"] = "225-230",
-["note"] = "Learn Artisan Enchanting and the later trainer recipes from Annora before leaving Uldaman. Enchant a suitable pair of gloves until 230.",
-["to"] = 230,
-["variants"] = {
-{
-["count"] = 5,
-["materials"] = {
-{
-11137,
-5
-}
-},
-["requiredTools"] = {
-{
-["itemID"] = 11145,
-["quantity"] = 1
-}
-},
-["spellID"] = 13815,
-["title"] = "Enchant Gloves - Agility"
-}
-}
-},
-{
-["from"] = 230,
-["id"] = "230-235",
-["note"] = "Apply Stamina to suitable boots until 235. Re-enchanting the same item is sufficient.",
-["to"] = 235,
-["variants"] = {
-{
-["count"] = 5,
-["materials"] = {
-{
-11137,
-10
-}
-},
-["requiredTools"] = {
-{
-["itemID"] = 11145,
-["quantity"] = 1
-}
-},
-["spellID"] = 13836,
-["title"] = "Enchant Boots - Stamina"
-}
-}
-},
-{
-["from"] = 235,
-["id"] = "235-250",
-["note"] = "Apply Superior Stamina to a suitable chest item until 250. Stop at the target; gains may require extra materials.",
+["note"] = "Learn Artisan Enchanting and the later trainer recipes from Annora before leaving Uldaman. Re-enchant a suitable pair of gloves until 250.",
 ["to"] = 250,
+["from"] = 225,
+["id"] = "225-250",
 ["variants"] = {
 {
-["count"] = 20,
-["materials"] = {
-{
-11137,
-60
-}
-},
 ["requiredTools"] = {
 {
 ["itemID"] = 11145,
 ["quantity"] = 1
 }
 },
-["spellID"] = 13858,
-["title"] = "Enchant Chest - Superior Stamina"
-}
-}
-},
-{
-["from"] = 250,
-["id"] = "250-265",
-["note"] = "Buy and learn Lesser Mana Oil from Kania in the upper floor of the Silithus inn. Buy Crystal Vials from Mishta or an Alchemy Supplies vendor. Manual alternative: Annora teaches Enchant Bracer - Greater Strength; each use takes 1 Dream Dust and 2 Lesser Nether Essence. Its extra crafts and reagents are not included in the shopping list.",
-["to"] = 265,
-["variants"] = {
-{
-["count"] = 20,
+["count"] = 34,
+["title"] = "Enchant Gloves - Agility",
 ["materials"] = {
 {
-8831,
-20
-},
-{
-8925,
-20
-},
-{
-11176,
-20
+11137,
+34
 }
 },
+["spellID"] = 13815
+}
+}
+},
+{
+["note"] = "Buy the Lesser Mana Oil and Wizard Oil formulas from Kania in Silithus. Buy Crystal Vials from Mishta or an Alchemy Supplies vendor. If Purple Lotus is scarce, Annora teaches Greater Strength on bracers. Each enchant uses 1 Dream Dust and 2 Lesser Nether Essence, so budget its materials separately.",
+["to"] = 270,
+["from"] = 250,
+["id"] = "250-270",
+["variants"] = {
+{
 ["recipeItemID"] = 20754,
 ["requiredTools"] = {
 {
 ["itemID"] = 11145,
 ["quantity"] = 1
+}
+},
+["count"] = 26,
+["title"] = "Lesser Mana Oil",
+["materials"] = {
+{
+8831,
+26
+},
+{
+8925,
+26
+},
+{
+11176,
+26
 }
 },
 ["shoppingRequirements"] = {
@@ -2149,30 +2080,30 @@ Z["STRANGLETHORN_VALE"]
 1
 }
 },
-["spellID"] = 25127,
-["title"] = "Lesser Mana Oil"
+["spellID"] = 25127
 }
 }
 },
 {
-["from"] = 265,
-["id"] = "265-294",
-["note"] = "Buy the formula from Daniel Bartlett in Undercity (Horde) or Mythrin'dir in Darnassus (Alliance). It binds on pickup: purchase it on this character. Enchant a suitable shield until 294.",
-["to"] = 294,
+["note"] = "Buy the shield formula on the enchanter who will learn it. It binds on pickup. Daniel Bartlett in Undercity and Mythrin'dir in Darnassus sell it.",
+["to"] = 275,
+["from"] = 270,
+["id"] = "270-275",
 ["variants"] = {
 {
-["count"] = 32,
-["materials"] = {
-{
-11176,
-192
-}
-},
 ["recipeItemID"] = 16217,
 ["requiredTools"] = {
 {
 ["itemID"] = 11145,
 ["quantity"] = 1
+}
+},
+["count"] = 5,
+["title"] = "Enchant Shield - Greater Stamina",
+["materials"] = {
+{
+11176,
+30
 }
 },
 ["shoppingRequirements"] = {
@@ -2181,16 +2112,111 @@ Z["STRANGLETHORN_VALE"]
 1
 }
 },
-["spellID"] = 20017,
-["title"] = "Enchant Shield - Greater Stamina"
+["spellID"] = 20017
 }
 }
 },
 {
-["from"] = 294,
-["id"] = "294-295",
-["note"] = "Lorelae Wintersong in Nighthaven, Moonglade, sells the Runed Arcanite Rod formula. Buy the Superior Defense formula at the same time. Obtain the unenchanted Arcanite Rod from Blacksmithing or the Auction House.",
+["id"] = "275-295",
+["from"] = 275,
 ["to"] = 295,
+["note"] = "Make Wizard Oil with the formula from Kania, or use the shield enchant if Dream Dust is cheaper. Craft counts are estimates.",
+["variants"] = {
+{
+["spellID"] = 25128,
+["title"] = "Wizard Oil",
+["recipeItemID"] = 20755,
+["requiredTools"] = {
+{
+["itemID"] = 11145,
+["quantity"] = 1
+}
+},
+["shoppingRequirements"] = {
+{
+20755,
+1
+}
+},
+["count"] = 26,
+["materials"] = {
+{
+4625,
+52
+},
+{
+8925,
+26
+},
+{
+16204,
+78
+}
+}
+},
+{
+["recipeItemID"] = 16217,
+["requiredTools"] = {
+{
+["itemID"] = 11145,
+["quantity"] = 1
+}
+},
+["count"] = 23,
+["title"] = "Enchant Shield - Greater Stamina",
+["materials"] = {
+{
+11176,
+138
+}
+},
+["shoppingRequirements"] = {
+{
+16217,
+1
+}
+},
+["spellID"] = 20017
+}
+}
+},
+{
+["id"] = "295-299",
+["from"] = 295,
+["to"] = 299,
+["note"] = "Use the shield formula learned earlier. Allow extra dust if skill gains slow down.",
+["variants"] = {
+{
+["recipeItemID"] = 16217,
+["requiredTools"] = {
+{
+["itemID"] = 11145,
+["quantity"] = 1
+}
+},
+["count"] = 8,
+["title"] = "Enchant Shield - Greater Stamina",
+["materials"] = {
+{
+11176,
+48
+}
+},
+["shoppingRequirements"] = {
+{
+16217,
+1
+}
+},
+["spellID"] = 20017
+}
+}
+},
+{
+["from"] = 299,
+["id"] = "299-300",
+["note"] = "Buy the Runed Arcanite Rod formula from Lorelae Wintersong in Nighthaven, Moonglade. Obtain the Arcanite Rod from a Blacksmith or the Auction House. You can learn the recipe at 290; save this craft for the final skill point if following this route.",
+["to"] = 300,
 ["variants"] = {
 {
 ["count"] = 1,
@@ -2237,45 +2263,13 @@ Z["STRANGLETHORN_VALE"]
 ["title"] = "Runed Arcanite Rod"
 }
 }
-},
-{
-["from"] = 295,
-["id"] = "295-300",
-["note"] = "Buy Superior Defense from Lorelae Wintersong and enchant a suitable cloak until 300. Manual alternative: continue Greater Stamina on a shield if Dream Dust is cheaper. Extra crafts for that alternative are not included in shopping.",
-["to"] = 300,
-["variants"] = {
-{
-["count"] = 5,
-["materials"] = {
-{
-16204,
-40
-}
-},
-["recipeItemID"] = 16224,
-["requiredTools"] = {
-{
-["itemID"] = 11145,
-["quantity"] = 1
-}
-},
-["shoppingRequirements"] = {
-{
-16224,
-1
-}
-},
-["spellID"] = 20015,
-["title"] = "Enchant Cloak - Superior Defense"
-}
-}
 }
 },
 ["title"] = "Artisan",
 ["to"] = 300,
 ["training"] = {
 ["level"] = 35,
-["note"] = "Visit Annora inside Uldaman before passing 225. Bring a party or a higher-level helper, enough gold, and roughly 100 Vision Dust. Clear all enemies in her room to make her appear. Learn the later recipes before leaving; the back entrance in Badlands is the shorter approach.",
+["note"] = "Visit Annora inside Uldaman before passing 225. Use the back entrance in Badlands and clear the scorpids in her room so she appears. Bring gold for training and around 50 Vision Dust, including spare dust for skill gains if you plan to level in the dungeon. Learn the later trainer recipes before leaving.",
 ["rank"] = "Artisan Enchanting",
 ["skill"] = 200,
 ["trainers"] = {
@@ -2333,7 +2327,7 @@ Z["STRANGLETHORN_VALE"]
 ["mapID"] = 1456,
 ["name"] = "Mot Dawnstrider",
 ["x"] = 44.9,
-["y"] = 39.0,
+["y"] = 38.5,
 ["zone"] = Z["THUNDER_BLUFF"]
 },
 [11072] = {
@@ -2442,6 +2436,8 @@ Z["STRANGLETHORN_VALE"]
 }
 },
 ["materialNames"] = {
+[4625] = "Firebloom",
+[20755] = "Formula: Wizard Oil",
 [10938] = "Lesser Magic Essence",
 [10940] = "Strange Dust",
 [11082] = "Greater Astral Essence",
@@ -2462,7 +2458,6 @@ Z["STRANGLETHORN_VALE"]
 [16206] = "Arcanite Rod",
 [16207] = "Runed Arcanite Rod",
 [16217] = "Formula: Enchant Shield - Greater Stamina",
-[16224] = "Formula: Enchant Cloak - Superior Defense",
 [16243] = "Formula: Runed Arcanite Rod",
 [17034] = "Maple Seed",
 [17035] = "Stranglethorn Seed",
@@ -2471,6 +2466,7 @@ Z["STRANGLETHORN_VALE"]
 [20754] = "Formula: Lesser Mana Oil",
 [247786] = "Mote of Magic",
 [3372] = "Leaded Vial",
+[4470] = "Simple Wood",
 [5500] = "Iridescent Pearl",
 [6217] = "Copper Rod",
 [6218] = "Runed Copper Rod",
@@ -2482,6 +2478,14 @@ Z["STRANGLETHORN_VALE"]
 [8925] = "Crystal Vial"
 },
 ["materialSources"] = {
+[4625] = {
+["kind"] = "auction",
+["note"] = "Gather Firebloom with Herbalism or buy it from another player."
+},
+[20755] = {
+["kind"] = "supply",
+["note"] = "Buy the formula from Kania in Silithus."
+},
 [10938] = {
 ["kind"] = "disenchant",
 ["note"] = "Disenchant eligible equipment or buy this reagent at the Auction House. Outcomes depend on item level and quality; no single zone guarantees this material."
@@ -2572,9 +2576,6 @@ Z["HILLSBRAD_FOOTHILLS"]
 [16217] = {
 ["kind"] = "supply"
 },
-[16224] = {
-["kind"] = "supply"
-},
 [16243] = {
 ["kind"] = "supply"
 },
@@ -2601,6 +2602,9 @@ Z["HILLSBRAD_FOOTHILLS"]
 [3372] = {
 ["kind"] = "auction",
 ["note"] = "Buy Leaded Vials from Alchemy Supplies vendors or the Auction House."
+},
+[4470] = {
+["kind"] = "supply"
 },
 [5500] = {
 ["kind"] = "auction",
@@ -2656,8 +2660,19 @@ Z["STRANGLETHORN_VALE"]
 
 },
 ["source"] = "https://www.wow-professions.com/forever/enchanting-leveling-guide",
-["sourceDate"] = "2026-10-25",
-["sourceHash"] = "c237b8b3182875e3f238d298ac0061dfd11de3a6fb146beed23d2cc044430af6",
+["sourceDate"] = "2026-11-20",
+["sourceHash"] = "0d69a5b1a6f25364ffaf2bbca1a28d5e39816379ea353eee31b55cc1f3c4f5e3",
+["stepProgressMigrations"] = {
+["265-299"] = {
+"270-275",
+"275-295",
+"295-299"
+},
+["110-150"] = {
+"110-125",
+"125-150"
+}
+},
 ["supplies"] = {
 {
 ["faction"] = "Horde",
@@ -2670,7 +2685,7 @@ Z["STRANGLETHORN_VALE"]
 ["mapID"] = 1458,
 ["name"] = "Daniel Bartlett",
 ["x"] = 64.2,
-["y"] = 37.6,
+["y"] = 37.7,
 ["zone"] = Z["UNDERCITY"]
 },
 {
@@ -2680,6 +2695,7 @@ Z["STRANGLETHORN_VALE"]
 [10938] = true,
 [10940] = true,
 [247786] = true,
+[4470] = true,
 [6217] = true
 },
 ["mapID"] = 2521,
@@ -2695,11 +2711,12 @@ Z["STRANGLETHORN_VALE"]
 [20752] = true,
 [20753] = true,
 [247786] = true,
+[4470] = true,
 [6217] = true
 },
 ["mapID"] = 1453,
 ["name"] = "Jessara Cordell",
-["x"] = 53.0,
+["x"] = 52.9,
 ["y"] = 74.1,
 ["zone"] = Z["STORMWIND_CITY"]
 },
@@ -2707,12 +2724,14 @@ Z["STRANGLETHORN_VALE"]
 ["faction"] = "Neutral",
 ["id"] = "kania",
 ["items"] = {
+[20755] = true,
 [10938] = true,
 [10940] = true,
 [20752] = true,
 [20753] = true,
 [20754] = true,
 [247786] = true,
+[4470] = true,
 [6217] = true
 },
 ["mapID"] = 1451,
@@ -2730,20 +2749,20 @@ Z["STRANGLETHORN_VALE"]
 [20752] = true,
 [20753] = true,
 [247786] = true,
+[4470] = true,
 [6217] = true,
 [6349] = true
 },
 ["mapID"] = 1454,
 ["name"] = "Kithas",
 ["x"] = 53.7,
-["y"] = 38.1,
+["y"] = 38.0,
 ["zone"] = Z["ORGRIMMAR"]
 },
 {
 ["faction"] = "Neutral",
 ["id"] = "lorelae-wintersong",
 ["items"] = {
-[16224] = true,
 [16243] = true,
 [3372] = true,
 [6217] = true
@@ -2751,7 +2770,7 @@ Z["STRANGLETHORN_VALE"]
 ["mapID"] = 1450,
 ["name"] = "Lorelae Wintersong",
 ["x"] = 48.3,
-["y"] = 40.1,
+["y"] = 40.2,
 ["zone"] = Z["MOONGLADE"]
 },
 {
@@ -2791,6 +2810,7 @@ Z["STRANGLETHORN_VALE"]
 [20752] = true,
 [20753] = true,
 [247786] = true,
+[4470] = true,
 [6217] = true
 },
 ["mapID"] = 2521,
@@ -2808,12 +2828,13 @@ Z["STRANGLETHORN_VALE"]
 [20752] = true,
 [20753] = true,
 [247786] = true,
+[4470] = true,
 [6217] = true,
 [6349] = true
 },
 ["mapID"] = 1456,
 ["name"] = "Nata Dawnstrider",
-["x"] = 44.5,
+["x"] = 44.9,
 ["y"] = 39.0,
 ["zone"] = Z["THUNDER_BLUFF"]
 },
@@ -2825,6 +2846,7 @@ Z["STRANGLETHORN_VALE"]
 [20752] = true,
 [20753] = true,
 [247786] = true,
+[4470] = true,
 [6217] = true
 },
 ["mapID"] = 1458,
@@ -2841,6 +2863,7 @@ Z["STRANGLETHORN_VALE"]
 [20752] = true,
 [20753] = true,
 [247786] = true,
+[4470] = true,
 [6217] = true,
 [6349] = true
 },
@@ -2859,6 +2882,7 @@ Z["STRANGLETHORN_VALE"]
 [20752] = true,
 [20753] = true,
 [247786] = true,
+[4470] = true,
 [6217] = true
 },
 ["mapID"] = 1457,
@@ -2876,6 +2900,7 @@ Z["STRANGLETHORN_VALE"]
 [20752] = true,
 [20753] = true,
 [247786] = true,
+[4470] = true,
 [6217] = true,
 [6349] = true
 },

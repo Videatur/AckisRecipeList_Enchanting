@@ -32,6 +32,8 @@ function module:InitializeQuests()
 	--AddQuest(39905,	Z.AZSUNA,			43.2,	43.6,	"Neutral")
 
 	-- Camping 101 Check needed.
+	-- Additional sources verified against Wowhead Forever.
+	AddQuest(92755, Z.DESOLACE, 35.4, 92, "Alliance")
 	AddQuest(96059, 		Z.IRONFORGE, 		60.4, 45, "Alliance")
 	AddQuest(97901, 		Z.DUROTAR, 			52, 47.2, "Horde")
 	AddQuest(97917, 		Z.ELWYNN_FOREST, 	44.8, 63.2, "Alliance")

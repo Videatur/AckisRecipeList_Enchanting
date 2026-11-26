@@ -2,7 +2,7 @@
 ## Title: Ackis Recipe Classic: Enchanting
 ## Notes: Enchanting data for Ackis Recipe List Classic.
 ## Author: Videatur
-## Version: 12.0.0
+## Version: 12.1.0
 ## X-Credits: Original authors: Ackis, Pompy, Ressy, Torhal.
 ## IconTexture: Interface\Icons\Inv_enchant_formulasuperior_01
 ## Dependencies: AckisRecipeList

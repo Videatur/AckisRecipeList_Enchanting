@@ -50,13 +50,145 @@ function module:InitializeRecipes()
     -- Forever
     -------------------------------------------------------------------------------
 
+    -- Enchant Bracer - Lesser Agility -- 1248460
+    recipe = AddRecipe(1248460, Q.UNCOMMON)
+    recipe:SetSkillLevels(140, 140, 165, 185, 205)
+    recipe:SetRecipeItem(249486, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_BRACER")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddRepVendor(FAC.MAGRAM_CLAN_CENTAUR, REP.EXALTED, 253139)
+    recipe:AddRepVendor(FAC.GELKIS_CLAN_CENTAUR, REP.HONORED, 253140)
+    recipe:AddQuest(92755)
+
+    -- Enchant Bracer - Lesser Healing Power -- 1248498
+    recipe = AddRecipe(1248498, Q.UNCOMMON)
+    recipe:SetSkillLevels(205, 205, 225, 245, 265)
+    recipe:SetRecipeItem(249489, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_BRACER")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddRepVendor(FAC.MAGRAM_CLAN_CENTAUR, REP.EXALTED, 253139)
+    recipe:AddRepVendor(FAC.GELKIS_CLAN_CENTAUR, REP.HONORED, 253140)
+    recipe:AddQuest(92755)
+
+
+    -- Twisted Nether Wand -- 1248461
+    recipe = AddRecipe(1248461, Q.UNCOMMON)
+    recipe:SetSkillLevels(185, 185, 205, 225, 245)
+    recipe:SetRecipeItem(249487, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(249144, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ENCHANTING_WAND")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(2567)
+
+    -- Enchant Bracer - Agility -- 1248497
+    recipe = AddRecipe(1248497, Q.UNCOMMON)
+    recipe:SetSkillLevels(190, 190, 225, 245, 265)
+    recipe:SetRecipeItem(249488, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_BRACER")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(4681)
+
+    -- Enchant 2H Weapon - Lesser Agility -- 1248510
+    recipe = AddRecipe(1248510, Q.UNCOMMON)
+    recipe:SetSkillLevels(210, 210, 230, 250, 270)
+    recipe:SetRecipeItem(249511, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(4329)
+
+    -- Dreambough Wand -- 1248509
+    recipe = AddRecipe(1248509, Q.UNCOMMON)
+    recipe:SetSkillLevels(215, 215, 235, 255, 275)
+    recipe:SetRecipeItem(249512, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(249234, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ENCHANTING_WAND")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(2720)
+
+    -- Enchant 2H Weapon - Lesser Strength -- 1248511
+    recipe = AddRecipe(1248511, Q.UNCOMMON)
+    recipe:SetSkillLevels(220, 220, 240, 260, 280)
+    recipe:SetRecipeItem(249513, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(5336)
+
+    -- Enchant Bracer - Greater Agility -- 1248500
+    recipe = AddRecipe(1248500, Q.UNCOMMON)
+    recipe:SetSkillLevels(240, 240, 260, 280, 300)
+    recipe:SetRecipeItem(249514, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_BRACER")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(7154)
+
+    -- Enchant Gloves - Advanced Skinning -- 1248528
+    recipe = AddRecipe(1248528, Q.UNCOMMON)
+    recipe:SetSkillLevels(250, 250, 270, 290, 310)
+    recipe:SetRecipeItem(249516, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_GLOVES")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(6196)
+
+    -- Dormant Heart of the Mountain -- 1249114
+    recipe = AddRecipe(1249114, Q.RARE)
+    recipe:SetSkillLevels(265, 265, 285, 305, 325)
+    recipe:SetRecipeItem(249521, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(249473, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_MISC")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE)
+    recipe:AddMobDrop(10596)
+
+    -- Molten Heart of the Mountain -- 1249112
+    recipe = AddRecipe(1249112, Q.RARE)
+    recipe:SetSkillLevels(265, 265, 285, 305, 325)
+    recipe:SetRecipeItem(249520, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(249470, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_MISC")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE)
+    recipe:AddMobDrop(9816)
+
+    -- Enchant 2H Weapon - Strength -- 1248668
+    recipe = AddRecipe(1248668, Q.UNCOMMON)
+    recipe:SetSkillLevels(290, 290, 295, 297, 300)
+    recipe:SetRecipeItem(249523, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE)
+    recipe:AddMobDrop(10498)
+
+    -- Enchant Bracer - Superior Agility -- 1248599
+    recipe = AddRecipe(1248599, Q.UNCOMMON)
+    recipe:SetSkillLevels(295, 295, 315, 335, 355)
+    recipe:SetRecipeItem(249524, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_BRACER")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE)
+    recipe:AddMobDrop(10399)
+
+    -- Arcane Forge -- 1263082
+    recipe = AddRecipe(1263082, Q.UNCOMMON)
+    recipe:SetSkillLevels(300, 300, 300, 300, 300)
+    recipe:SetRecipeItem(273116, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(279987, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ENCHANTING_MISC")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE)
+    recipe:AddMobDrop(261809)
+
+    -- Enchant Boots - Speed -- 1328948
+    recipe = AddRecipe(1328948, Q.UNCOMMON)
+    recipe:SetSkillLevels(280, 280, 280, 290, 300)
+    recipe:SetRecipeItem(289560, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_BOOTS")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.HONORED, 248199)
+    recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.HONORED, 256732)
+    recipe:AddMerchantFavor(180)
+
     -- Enchant Cloak - Lesser Shadow Resistance -- 13522
     recipe = AddRecipe(13522, Q.UNCOMMON)
     recipe:SetSkillLevels(135, 135, 160, 180, 200)
     recipe:SetRecipeItem(11098, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_CLOAK")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Shield - Frost Resistance -- 13933
     recipe = AddRecipe(13933, Q.UNCOMMON)
@@ -64,7 +196,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11224, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_SHIELD")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.SCARLET_MONASTERY, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Cloak - Greater Resistance -- 20014
     recipe = AddRecipe(20014, Q.UNCOMMON)
@@ -76,11 +208,12 @@ function module:InitializeRecipes()
 
     -- Enchant Cloak - Subtlety -- 25084
     recipe = AddRecipe(25084, Q.RARE)
+    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
     recipe:SetSkillLevels(300, 300, 320, 340, 360)
     recipe:SetRecipeItem(20735, "BIND_ON_PICKUP")
     recipe:SetItemFilterType("ENCHANTING_CLOAK")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddMobDrop(15276)
 
     -- Enchant Bracer - Minor Intellect -- 1248458
     recipe = AddRecipe(1248458, Q.UNCOMMON)
@@ -88,7 +221,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(249474, "BIND_ON_PICKUP")
     recipe:SetItemFilterType("ENCHANTING_BRACER")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddMobDrop(1768)
+    recipe:AddMobDrop(1768, 2174)
 
     -- Enchant Bracer - Minor Healing Power -- 1248459
     recipe = AddRecipe(1248459, Q.UNCOMMON)
@@ -127,12 +260,12 @@ function module:InitializeRecipes()
 
     -- Arcane Salvager -- 1263056
     recipe = AddRecipe(1263056, Q.UNCOMMON)
-    recipe:SetSkillLevels(140, 140, 140, 142, 145)
+    recipe:SetSkillLevels(140, 140, 140, 140, 140)
     recipe:SetRecipeItem(273103, "BIND_ON_EQUIP")
     recipe:SetCraftedItem(279985, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_MISC")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.ALTERAC_MOUNTAINS)
+    recipe:AddMobDrop(4421, 246020, 250657)
 
 
 
@@ -141,7 +274,7 @@ function module:InitializeRecipes()
     recipe = AddRecipe(7795, Q.COMMON)
     recipe:SetSkillLevels(100, 100, 130, 150, 170)
     recipe:SetCraftedItem(6339, "BIND_ON_PICKUP")
-    recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+    recipe:SetItemFilterType("ENCHANTING_ROD")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddTrainer(1317, 3011, 3345, 4213, 4616, 5157, 7949, 11072, 11073, 11074, 251978, 259287)
 
@@ -156,7 +289,7 @@ function module:InitializeRecipes()
     recipe = AddRecipe(13628, Q.COMMON)
     recipe:SetSkillLevels(150, 150, 175, 195, 215)
     recipe:SetCraftedItem(11130, "BIND_ON_PICKUP")
-    recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+    recipe:SetItemFilterType("ENCHANTING_ROD")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddTrainer(1317, 3011, 3345, 4213, 4616, 5157, 7949, 11072, 11073, 11074, 251978, 259287)
 
@@ -171,7 +304,7 @@ function module:InitializeRecipes()
     recipe = AddRecipe(13702, Q.COMMON)
     recipe:SetSkillLevels(200, 200, 220, 240, 260)
     recipe:SetCraftedItem(11145, "BIND_ON_PICKUP")
-    recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+    recipe:SetItemFilterType("ENCHANTING_ROD")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddTrainer(11072, 11073, 11074, 251978, 259287)
 
@@ -187,7 +320,7 @@ function module:InitializeRecipes()
     recipe:SetSkillLevels(290, 290, 310, 330, 350)
     recipe:SetRecipeItem(16243, "BIND_ON_PICKUP")
     recipe:SetCraftedItem(16207, "BIND_ON_PICKUP")
-    recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+    recipe:SetItemFilterType("ENCHANTING_ROD")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddLimitedVendor(12022, 1)
 
@@ -245,23 +378,24 @@ function module:InitializeRecipes()
 
     -- Dust to Motes -- 1245320
     recipe = AddRecipe(1245320, Q.COMMON)
-    recipe:SetSkillLevels(10, 10, 10, 12, 15)
-    recipe:SetItemFilterType("ENCHANTING_MISC")
+    recipe:SetCraftedItem(247786, "BIND_ON_EQUIP")
+    recipe:SetSkillLevels(1, 1, 10, 12, 15)
+    recipe:SetItemFilterType("ENCHANTING_MATERIALS")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
     recipe:AddCustom("DEFAULT_RECIPE")
 
     -- Novice's Practice Wand -- 1245321
     recipe = AddRecipe(1245321, Q.COMMON)
-    recipe:SetSkillLevels(10, 10, 10, 12, 15)
-    recipe:SetCraftedItem(247789, "BIND_ON_PICKUP")
-    recipe:SetItemFilterType("ENCHANTING_MISC")
+    recipe:SetSkillLevels(1, 1, 10, 12, 15)
+    recipe:SetCraftedItem(247789, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ENCHANTING_WAND")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
     recipe:AddCustom("DEFAULT_RECIPE")
 
     -- Enchanted Lute -- 1230643
     recipe = AddRecipe(1230643, Q.COMMON)
-    recipe:SetSkillLevels(20, 20, 20, 22, 25)
-    recipe:SetCraftedItem(279976, "BIND_ON_PICKUP")
+    recipe:SetSkillLevels(20, 20, 20, 20, 20)
+    recipe:SetCraftedItem(279976, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_MISC")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
     recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11065, 11066, 11067, 11068, 11070, 11071, 11072, 11074, 251978, 257004, 257020, 259287, 266881)
@@ -666,16 +800,51 @@ function module:InitializeRecipes()
     recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.HONORED, 256732)
     recipe:AddMerchantFavor(240)
 
+    -- Frozen Heart of the Mountain -- 1249107
+    recipe = AddRecipe(1249107, Q.RARE)
+    recipe:SetSkillLevels(265, 265, 285, 305, 325)
+    recipe:SetRecipeItem(249519, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(249469, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_MISC")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE)
+    recipe:AddMobDrop(16080)
+
+    -- Lesser Eternal Wand -- 1248505
+    recipe = AddRecipe(1248505, Q.UNCOMMON)
+    recipe:SetSkillLevels(245, 245, 265, 285, 305)
+    recipe:SetRecipeItem(249515, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(249232, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ENCHANTING_WAND")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(6556)
+
+    -- Greater Eternal Wand -- 1248515
+    recipe = AddRecipe(1248515, Q.UNCOMMON)
+    recipe:SetSkillLevels(275, 275, 285, 295, 305)
+    recipe:SetRecipeItem(249522, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(249237, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ENCHANTING_WAND")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(9778)
+
+    -- Enchant Gloves - Lotus Claw -- 1294054
+    recipe = AddRecipe(1294054, Q.UNCOMMON)
+    recipe:SetSkillLevels(295, 295, 295, 297, 300)
+    recipe:SetRecipeItem(274424, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ENCHANTING_GLOVES")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddVendor(256629)
+
 
     -------------------------------------------------------------------------------
     -- Classic.
     -------------------------------------------------------------------------------
     -- Enchant Bracer - Inferior Stamina -- 7418
     recipe = AddRecipe(7418, Q.COMMON)
-    recipe:SetSkillLevels(20, 20, 20, 22, 25)
+    recipe:SetSkillLevels(1, 1, 20, 22, 25)
     recipe:SetItemFilterType("ENCHANTING_BRACER")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
-    recipe:AddTrainer(3606, 11073, 11068, 257004, 5157, 3345, 11074, 11066, 11072, 11070, 4616, 1317, 11067, 11071, 257020, 266881, 4213, 11065, 5695, 251978)
+    recipe:AddCustom("DEFAULT_RECIPE")
 
     -- Enchant Chest - Inferior Stamina -- 7420
     recipe = AddRecipe(7420, Q.COMMON)
@@ -686,7 +855,7 @@ function module:InitializeRecipes()
 
     -- Runed Copper Rod -- 7421
     recipe = AddRecipe(7421, Q.COMMON)
-    recipe:SetSkillLevels(5, 5, 5, 7, 10)
+    recipe:SetSkillLevels(1, 1, 5, 7, 10)
     recipe:SetCraftedItem(6218, "BIND_ON_PICKUP")
     recipe:SetItemFilterType("ENCHANTING_ROD")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
@@ -701,7 +870,7 @@ function module:InitializeRecipes()
 
     -- Enchant Bracer - Minor Deflect -- 7428
     recipe = AddRecipe(7428, Q.COMMON)
-    recipe:SetSkillLevels(80, 80, 80, 100, 120)
+    recipe:SetSkillLevels(1, 1, 80, 100, 120)
     recipe:SetItemFilterType("ENCHANTING_BRACER")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1, F.TANK)
     recipe:AddCustom("DEFAULT_RECIPE")
@@ -743,7 +912,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(6344, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_BRACER")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Cloak - Minor Resistance -- 7454
     recipe = AddRecipe(7454, Q.COMMON)
@@ -755,7 +924,7 @@ function module:InitializeRecipes()
     -- Enchant Cloak - Minor Protection -- 7771
     recipe = AddRecipe(7771, Q.COMMON)
     recipe:SetRecipeItem(6345, "BIND_ON_EQUIP")
-    recipe:SetSkillLevels(90, 70, 110, 130, 150)
+    recipe:SetSkillLevels(90, 90, 110, 130, 150)
     recipe:SetItemFilterType("ENCHANTING_CLOAK")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11065, 11066, 11067, 11068, 11070, 11071, 11072, 11073, 11074, 251978, 257004, 257020, 259287, 266881)
@@ -766,7 +935,6 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(6346, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_CHEST")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-    recipe:AddLimitedVendor(3346, 1, 5757, 1)
     recipe:AddMobDrop(3715)
 
     -- Enchant Bracer - Minor Agility -- 7779
@@ -790,7 +958,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(6348, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_WEAPON")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RUINS_OF_LORDAERON, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Weapon - Minor Striking -- 7788
     recipe = AddRecipe(7788, Q.COMMON)
@@ -820,7 +988,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(6375, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_BRACER")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Boots - Minor Stamina -- 7863
     recipe = AddRecipe(7863, Q.COMMON)
@@ -851,7 +1019,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11038, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Cloak - Minor Agility -- 13419
     recipe = AddRecipe(13419, Q.UNCOMMON)
@@ -1028,7 +1196,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11164, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_WEAPON")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Weapon - Lesser Elemental Slayer -- 13655
     recipe = AddRecipe(13655, Q.UNCOMMON)
@@ -1036,7 +1204,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11165, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_WEAPON")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_STOCKADE, Z.ULDAMAN, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Shield - Spirit -- 13659
     recipe = AddRecipe(13659, Q.COMMON)
@@ -1065,7 +1233,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11167, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_BOOTS")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_STOCKADE, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Shield - Lesser Parry -- 13689
     recipe = AddRecipe(13689, Q.UNCOMMON)
@@ -1073,7 +1241,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11168, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_SHIELD")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.TANK)
-    recipe:AddWorldDrop(Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.ALTERAC_MOUNTAINS, Z.BLACKFATHOM_DEEPS, Z.DESOLACE, Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Weapon - Striking -- 13693
     recipe = AddRecipe(13693, Q.COMMON)
@@ -1214,7 +1382,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11208, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_WEAPON")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_MONASTERY, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Chest - Superior Mana -- 13917
     recipe = AddRecipe(13917, Q.COMMON)
@@ -1272,7 +1440,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11225, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_BRACER")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RUINS_OF_AHNQIRAJ, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_MONASTERY, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Gloves - Riding Skill -- 13947
     recipe = AddRecipe(13947, Q.UNCOMMON)
@@ -1280,7 +1448,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(11226, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_GLOVES")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.STORM_CLIFFS, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.STORM_CLIFFS, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Gloves - Minor Haste -- 13948
     recipe = AddRecipe(13948, Q.COMMON)
@@ -1316,7 +1484,7 @@ function module:InitializeRecipes()
     -- Greater Mystic Wand -- 14810
     recipe = AddRecipe(14810, Q.COMMON)
     recipe:SetSkillLevels(175, 175, 195, 215, 235)
-    recipe:SetCraftedItem(11290, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(217287, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_WAND")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddTrainer(11072, 11073, 11074, 251978, 259287)
@@ -1325,7 +1493,7 @@ function module:InitializeRecipes()
     recipe = AddRecipe(15596, Q.UNCOMMON)
     recipe:SetSkillLevels(265, 265, 285, 305, 325)
     recipe:SetRecipeItem(11813, "BIND_ON_PICKUP")
-    recipe:SetCraftedItem(45050, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(11811, "BIND_ON_PICKUP")
     recipe:SetItemFilterType("ENCHANTING_MISC")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE, F.DPS, F.HEALER, F.CASTER)
     recipe:AddMobDrop(9025)
@@ -1334,7 +1502,7 @@ function module:InitializeRecipes()
     recipe = AddRecipe(17180, Q.COMMON)
     recipe:SetSkillLevels(250, 250, 250, 255, 260)
     recipe:SetCraftedItem(12655, "BIND_ON_EQUIP")
-    recipe:SetItemFilterType("ENCHANTING_MISC")
+    recipe:SetItemFilterType("ENCHANTING_MATERIALS")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddTrainer(11073)
 
@@ -1342,7 +1510,7 @@ function module:InitializeRecipes()
     recipe = AddRecipe(17181, Q.COMMON)
     recipe:SetSkillLevels(250, 250, 250, 255, 260)
     recipe:SetCraftedItem(12810, "BIND_ON_EQUIP")
-    recipe:SetItemFilterType("ENCHANTING_MISC")
+    recipe:SetItemFilterType("ENCHANTING_MATERIALS")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddTrainer(11073)
 
@@ -1360,7 +1528,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(16218, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_BRACER")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Bracer - Superior Strength -- 20010
     recipe = AddRecipe(20010, Q.UNCOMMON)
@@ -1384,7 +1552,7 @@ function module:InitializeRecipes()
     recipe:SetSkillLevels(270, 270, 290, 310, 330)
     recipe:SetItemFilterType("ENCHANTING_GLOVES")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-    recipe:AddMobDrop(6201)
+    recipe:AddMobDrop(6201, 236876)
 
     -- Enchant Gloves - Greater Strength -- 20013
     recipe = AddRecipe(20013, Q.COMMON)
@@ -1424,7 +1592,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(16215, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_BOOTS")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Boots - Greater Agility -- 20023
     recipe = AddRecipe(20023, Q.COMMON)
@@ -1432,7 +1600,7 @@ function module:InitializeRecipes()
     recipe:SetSkillLevels(295, 295, 315, 335, 355)
     recipe:SetItemFilterType("ENCHANTING_BOOTS")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_CRYSTAL_VALE, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_ENCLAVE, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_CRYSTAL_VALE, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Boots - Spirit -- 20024
     recipe = AddRecipe(20024, Q.UNCOMMON)
@@ -1440,7 +1608,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(16220, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_BOOTS")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MARAUDON, Z.MOLTEN_CORE, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Chest - Greater Stats -- 20025
     recipe = AddRecipe(20025, Q.UNCOMMON)
@@ -1448,7 +1616,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(16253, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_CHEST")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKWING_LAIR, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Enchant Chest - Major Stamina -- 20026
     recipe = AddRecipe(20026, Q.COMMON)
@@ -1457,6 +1625,7 @@ function module:InitializeRecipes()
     recipe:SetItemFilterType("ENCHANTING_CHEST")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddLimitedVendor(11189, 1)
+    recipe:AddMobDrop(7026)
 
     -- Enchant Chest - Major Mana -- 20028
     recipe = AddRecipe(20028, Q.COMMON)
@@ -1492,19 +1661,21 @@ function module:InitializeRecipes()
 
     -- Enchant Weapon - Lifestealing -- 20032
     recipe = AddRecipe(20032, Q.RARE)
+    recipe:AddWorldDrop(Z.KARAZHAN_CRYPTS, Z.SCHOLOMANCE)
     recipe:SetSkillLevels(300, 300, 320, 340, 360)
     recipe:SetRecipeItem(16254, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_WEAPON")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE)
-    recipe:AddWorldDrop(Z.KARAZHAN_CRYPTS, Z.SCHOLOMANCE)
+    recipe:AddMobDrop(10499)
 
     -- Enchant Weapon - Unholy Weapon -- 20033
     recipe = AddRecipe(20033, Q.UNCOMMON)
+    recipe:AddWorldDrop(Z.KARAZHAN_CRYPTS, Z.STRATHOLME)
     recipe:SetSkillLevels(295, 295, 315, 335, 355)
     recipe:SetRecipeItem(16248, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_WEAPON")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE)
-    recipe:AddWorldDrop(Z.KARAZHAN_CRYPTS, Z.STRATHOLME)
+    recipe:AddMobDrop(10398)
 
     -- Enchant Weapon - Crusader -- 20034
     recipe = AddRecipe(20034, Q.UNCOMMON)
@@ -1605,11 +1776,12 @@ function module:InitializeRecipes()
 
     -- Enchant Gloves - Threat -- 25072
     recipe = AddRecipe(25072, Q.RARE)
+    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
     recipe:SetSkillLevels(300, 300, 320, 340, 360)
     recipe:SetRecipeItem(20726, "BIND_ON_PICKUP")
     recipe:SetItemFilterType("ENCHANTING_GLOVES")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.RAID, F.TANK)
-    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddMobDrop(15275)
 
     -- Enchant Gloves - Shadow Power -- 25073
     recipe = AddRecipe(25073, Q.RARE)
@@ -1682,7 +1854,7 @@ function module:InitializeRecipes()
 
     -- Minor Wizard Oil -- 25124
     recipe = AddRecipe(25124, Q.COMMON)
-    recipe:SetSkillLevels(5, 5, 45, 47, 65)
+    recipe:SetSkillLevels(5, 5, 30, 47, 65)
     recipe:SetRecipeItem(20758, "BIND_ON_EQUIP")
     recipe:SetCraftedItem(20744, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ENCHANTING_OIL")
